@@ -1,6 +1,6 @@
 # SequenceClassification
 
-![SequenceClassification](./assets/bert-one-seq.svd, "SequenceClassification")
+![SequenceClassification](https://github.com/AtsunoriFujita/sagemaker_nlp_examples/blob/main/SequenceClassification/assets/bert-one-seq.svg, "SequenceClassification")
 
 ## pytorch_training
 - SageMaker HuggingFaceコンテナを使用したトレーニングジョブ

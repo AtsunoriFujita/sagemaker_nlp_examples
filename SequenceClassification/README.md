@@ -8,6 +8,6 @@
 - [東北大学の日本語BERT](https://github.com/cl-tohoku/bert-japanese)を使用
 
 ## pytorch_inference_on_torchserve
-- [TorchServe](https://github.com/pytorch/serve)をSageMakerのModelクラスでリアルタイム推論エンドポイントを構築    
+- [TorchServe](https://github.com/pytorch/serve)のリアルタイム推論エンドポイントをSageMakerのModelクラスでを実行    
 
 _NOTE: SageMaker HuggingFaceの推論コンテナがまだリリースされていないため_

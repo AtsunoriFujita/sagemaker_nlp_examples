@@ -1,0 +1,10 @@
+{
+ "model_name":"cl-tohoku/bert-base-japanese-whole-word-masking",
+ "mode":"sequence_classification",
+ "do_lower_case":false,
+ "num_labels":"2",
+ "save_mode":"pretrained",
+ "max_length":"512",
+ "captum_explanation":false,
+ "embedding_name": "bert"
+}

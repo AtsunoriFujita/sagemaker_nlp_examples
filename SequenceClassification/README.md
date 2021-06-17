@@ -20,7 +20,7 @@ predictor.predict(data=payload).decode(encoding='utf-8')
 # 'Positive'
 ```
 
-_NOTE: SageMaker HuggingFaceの推論コンテナが現時点でリリースされていないためTorchServeを使用_
+_NOTE: SageMaker HuggingFaceの推論コンテナが2021/06時点でリリースされていないためTorchServeを使用_
 
 ### Reference
 - [Run training on Amazon SageMaker](https://huggingface.co/transformers/sagemaker.html#access-trained-model)

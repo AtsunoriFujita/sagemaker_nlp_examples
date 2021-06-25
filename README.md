@@ -4,7 +4,9 @@
 
 ## Examples
 - SequenceClassification
-  - HuggingFace Transformers 日本語BERT 二値分類
+  - HuggingFace Transformers 日本語BERT Amazonレビューデータセット
+- QuestionAnswering
+  - HuggingFace Transformers 日本語BERT 運転ドメインQAデータセット
 
 Others?    
 Stay tuned!

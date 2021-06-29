@@ -1,6 +1,6 @@
 # QuestionAnswering
 
-![QuestionAnswering](https://user-images.githubusercontent.com/40932835/123375451-bfe92a00-d5c3-11eb-8657-97d419de429e.png)
+![QuestionAnswering](https://user-images.githubusercontent.com/40932835/123745696-9b56c000-d8eb-11eb-8bd5-22a05a00f28b.png)
 
 ↑の画像は[ここ](https://d2l.ai/chapter_natural-language-processing-applications/finetuning-bert.html)から
 

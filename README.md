@@ -9,8 +9,8 @@
   - AmazonSageMaker, HuggingFace Transformers, 日本語BERT, Wikipediaを用いた日本語の固有表現抽出データセット
 - QuestionAnswering
   - AmazonSageMaker, HuggingFace Transformers, 日本語BERT, 運転ドメインQAデータセット
-- SageMakerLDA
-  - AmazonSageMaker, ビルトインLDA, livedoor ニュースコーパス
+- LDA
+  - AmazonSageMaker, built-in LDA, livedoorニュースコーパス
 - AmazonCoprehend_tutorial
   - AmazonCoprehend, Entity抽出, KeyPhrase抽出, Sentiment分析, Amazonレビューデータセット
 

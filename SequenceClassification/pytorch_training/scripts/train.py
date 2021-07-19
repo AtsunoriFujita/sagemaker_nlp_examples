@@ -33,6 +33,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_name", type=str)
     parser.add_argument("--learning_rate", type=str, default=5e-5)
     parser.add_argument("--output_dir", type=str)
+    parser.add_argument("--num_labels", type=int, default=2)
 
     # Data, model, and output directories
     parser.add_argument("--output-data-dir", type=str, default=os.environ["SM_OUTPUT_DATA_DIR"])
@@ -51,15 +52,28 @@ if __name__ == "__main__":
     logger.info(f" loaded test_dataset length is: {len(test_dataset)}")
 
     # compute metrics function for binary classification
-    def compute_metrics(pred):
+    def compute_metrics_binary(pred):
         labels = pred.label_ids
         preds = pred.predictions.argmax(-1)
         precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average="binary")
         acc = accuracy_score(labels, preds)
         return {"accuracy": acc, "f1": f1, "precision": precision, "recall": recall}
 
+    # compute metrics function for multi-class classification
+    def compute_metrics_multi(pred):
+        labels = pred.label_ids
+        preds = pred.predictions.argmax(-1)
+        precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average="macro")
+        acc = accuracy_score(labels, preds)
+        return {"accuracy": acc, "f1": f1, "precision": precision, "recall": recall}
+    
+    if args.num_labels == 2:
+        compute_metrics = compute_metrics_binary
+    else:
+        compute_metrics = compute_metrics_multi
+    
     # download model from model hub
-    model = AutoModelForSequenceClassification.from_pretrained(args.model_name)
+    model = AutoModelForSequenceClassification.from_pretrained(args.model_name, num_labels=args.num_labels)
 
     # define training args
     training_args = TrainingArguments(

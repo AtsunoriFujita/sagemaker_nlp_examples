@@ -4,11 +4,13 @@
 
 ## Examples
 - SequenceClassification
-  - AmazonSageMaker, HuggingFace Transformers, 日本語BERT, Amazonレビューデータセット
+  - AmazonSageMaker, 🤗 Transformers, 日本語BERT, Amazonレビューデータセット
 - TokenClassification
-  - AmazonSageMaker, HuggingFace Transformers, 日本語BERT, Wikipediaを用いた日本語の固有表現抽出データセット
+  - AmazonSageMaker, 🤗 Transformers, 日本語BERT, Wikipediaを用いた日本語の固有表現抽出データセット
 - QuestionAnswering
-  - AmazonSageMaker, HuggingFace Transformers, 日本語BERT, 運転ドメインQAデータセット
+  - AmazonSageMaker, 🤗 Transformers, 日本語BERT, 運転ドメインQAデータセット
+- BlazingText
+  - AmazonSageMaker, built-in BlazingText(教師なし, Word2vec), ja.text8
 - LatentDirichletAllocation(LDA)
   - AmazonSageMaker, built-in LDA, livedoorニュースコーパス
 - AmazonCoprehend_tutorial

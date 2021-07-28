@@ -15,7 +15,7 @@ BlazingTextにはUnsupervised（教師なし）とSupervised（教師あり）�
 - [Hironsan](https://github.com/Hironsan)さんの公開している[ja.text8](https://github.com/Hironsan/ja.text8)を使用
 
 
-##### 推論Output
+#### 推論Output
 ```python
 words = ["日本", "五輪"]
 payload = {"instances": words}

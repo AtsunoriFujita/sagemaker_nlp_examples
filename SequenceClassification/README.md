@@ -12,9 +12,8 @@
 
 ## pytorch_inference
 - SageMaker HuggingFaceコンテナを使用したTransformersモデルのデプロイ
-  - HuggingFaceの[SageMaker example](https://github.com/huggingface/notebooks/tree/master/sagemaker)から10_deploy_model_from_s3, 11_deploy_model_from_hf_hubを参照
-
-_NOTE: HuggingFace HubからSageMakerへ直接デプロイする方法は今後対応予定_
+  - HuggingFaceの[SageMaker example](https://github.com/huggingface/notebooks/tree/master/sagemaker)の10_deploy_model_from_s3, 11_deploy_model_from_hf_hubを参照し、日本語モデルへ対応できるよう変更しています。
+- HuggingFaceのTransformersで学習したモデルをSageMaker上へデプロイする方法と、[🤗 Hub](https://huggingface.co/models)のモデルをSageMaker上へデプロイする方法の2種類を扱っています。
 
 ```python
 data = {"inputs": 'ハワイアンの心和む音楽の中、ちょっとシリアスなドラマが展開していきます。音楽の力ってすごいな、って思いました。'}

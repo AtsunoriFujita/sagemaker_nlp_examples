@@ -1,0 +1,7 @@
+# from https://github.com/huggingface/transformers/blob/master/examples/pytorch/language-modeling/requirements.txt
+accelerate
+torch >= 1.3
+transformers >= 4.8.0
+datasets >= 1.8.0
+sentencepiece != 0.1.92
+protobuf

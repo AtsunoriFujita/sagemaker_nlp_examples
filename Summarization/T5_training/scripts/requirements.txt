@@ -1,0 +1,10 @@
+# https://github.com/huggingface/transformers/blob/master/examples/pytorch/summarization/requirements.txt
+transformers >= 4.8.0
+accelerate
+datasets >= 1.8.0
+sentencepiece != 0.1.92
+protobuf
+rouge-score
+nltk
+py7zr
+torch >= 1.3

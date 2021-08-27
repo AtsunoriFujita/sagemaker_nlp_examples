@@ -10,8 +10,10 @@
   - AmazonSageMaker, 🤗 Transformers, 日本語BERT, Wikipediaを用いた日本語の固有表現抽出データセット
 - QuestionAnswering
   - AmazonSageMaker, 🤗 Transformers, 日本語BERT, 運転ドメインQAデータセット
+- Summarization
+  - AmazonSageMaker, 🤗 Transformers, 日本語T5, wikiHow日本語要約データセット
 - GPT2 Fine-Tuning
-  - AmazonSageMaker, 🤗 Transformers, rinna/japanese-gpt2-medium, wikiHow日本語要約データセット
+  - AmazonSageMaker, 🤗 Transformers, 日本語GPT2, wikiHow日本語要約データセット
 - BlazingText
   - AmazonSageMaker, built-in BlazingText(教師なし, Word2vec), ja.text8
 - LatentDirichletAllocation(LDA)

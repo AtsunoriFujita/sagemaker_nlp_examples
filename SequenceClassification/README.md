@@ -21,6 +21,25 @@ predictor.predict(data)
 # [{'label': 'LABEL_1', 'score': 0.9968476295471191}]
 ```
 
+## pytorch_batch_transform_inference
+- SageMaker HuggingFaceコンテナを使用したTransformersモデルのバッチ変換ジョブ
+  - HuggingFaceの[SageMaker example](https://github.com/huggingface/notebooks/tree/master/sagemaker)の12_batch_transform_inferenceを参照し、日本語モデルへ対応できるよう変更しています。
+
+```python
+# create Transformer to run our batch job
+batch_job = huggingface_model.transformer(
+    instance_count=1,
+    instance_type='ml.p3.2xlarge',
+    output_path=output_s3_path, # we are using the same s3 path to save the output with the input
+    strategy='SingleRecord')
+
+# starts batch transform job and uses s3 data as input
+batch_job.transform(
+    data=s3_file_uri,
+    content_type='application/json',    
+    split_type='Line')
+```
+
 ## pytorch_inference_on_torchserve
 - [TorchServe](https://github.com/pytorch/serve)の推論エンドポイントをSageMakerのModelクラスでデプロイ    
 - `pytorch_training`で学習したモデルを使用

@@ -492,12 +492,19 @@ def main():
     metric = load_metric("rouge")
 
     def postprocess_text(preds, labels):
-        preds = [pred.strip() for pred in preds]
-        labels = [label.strip() for label in labels]
-
+        #preds = [pred.strip() for pred in preds]
+        #labels = [label.strip() for label in labels]
+        
         # rougeLSum expects newline after each sentence
-        preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in preds]
-        labels = ["\n".join(nltk.sent_tokenize(label)) for label in labels]
+        #preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in preds]
+        #labels = ["\n".join(nltk.sent_tokenize(label)) for label in labels]        
+        
+        def to_ids(text):
+            ids = tokenizer.encode(text, add_special_tokens=False)
+            return ' '.join([str(id) for id in ids])
+        
+        preds = list(map(to_ids, preds))
+        labels = list(map(to_ids, labels))
 
         return preds, labels
 
@@ -514,7 +521,7 @@ def main():
         # Some simple post-processing
         decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
-        result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+        result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=False)
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
 

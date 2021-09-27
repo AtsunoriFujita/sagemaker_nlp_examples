@@ -43,3 +43,4 @@ with torch.no_grad():
 - [wikiHow日本語要約データセット](https://github.com/Katsumata420/wikihow_japanese)
 - [sonoisa/t5-base-japanese](https://huggingface.co/sonoisa/t5-base-japanese#%E6%97%A5%E6%9C%AC%E8%AA%9Et5%E4%BA%8B%E5%89%8D%E5%AD%A6%E7%BF%92%E6%B8%88%E3%81%BF%E3%83%A2%E3%83%87%E3%83%AB)
 - [Huggingface Transformers 入門 (25) - 日本語の要約の学習](https://note.com/npaka/n/n6df9ef13a0ed)
+- [transformersでT5,MT5,BYT5の文章要約比較](https://tech.yellowback.net/posts/transformers-compare-t5-models)

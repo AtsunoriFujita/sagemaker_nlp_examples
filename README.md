@@ -1,7 +1,7 @@
 # SageMaker NLP examples for Japanese
 
-[Amazon SageMaker](https://aws.amazon.com/jp/sagemaker/)で実行できる（主に日本語の）自然言語処理のサンプル集
-
+[Amazon SageMaker](https://aws.amazon.com/jp/sagemaker/)で実行できる（主に日本語の）自然言語処理のサンプル集    
+推論周りはSequenceClassificationの下にまとまっています（SageMakerのリアルタイムエンドポイント、バッチ変換ジョブ、TorchServe、Lambda）。
 
 ## Examples
 - SequenceClassification

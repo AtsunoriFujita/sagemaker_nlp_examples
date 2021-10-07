@@ -16,6 +16,7 @@
   - AmazonSageMaker, 🤗 Transformers, 日本語GPT2, wikiHow日本語要約データセット
 - BlazingText
   - AmazonSageMaker, built-in BlazingText(教師なし, Word2vec), ja.text8
+  - AmazonSageMaker, built-in BlazingText(教師あり, テキスト分類), Amazonレビューデータセット
 - LatentDirichletAllocation(LDA)
   - AmazonSageMaker, built-in LDA, livedoorニュースコーパス
 - AmazonCoprehend_tutorial

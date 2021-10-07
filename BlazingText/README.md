@@ -53,7 +53,8 @@ word_vectors.most_similar(['日本'])
 ```
 
 ### Supervised
-- Coming soon
+- AmazonSageMakerのビルトインアルゴリズムの一つであるBlazingText（教師あり）を使用したexample
+- Amazonの商品レビューデータセットを使用した二値分類
 
 
 ### Reference

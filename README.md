@@ -14,6 +14,8 @@
   - AmazonSageMaker, 🤗 Transformers, 日本語T5, wikiHow日本語要約データセット
 - GPT2 Fine-Tuning
   - AmazonSageMaker, 🤗 Transformers, 日本語GPT2, wikiHow日本語要約データセット
+- Language Modeling
+  - AmazonSageMaker, 🤗 Transformers, 日本語T5, wiki40b
 - BlazingText
   - AmazonSageMaker, built-in BlazingText(教師なし, Word2vec), ja.text8
   - AmazonSageMaker, built-in BlazingText(教師あり, テキスト分類), Amazonレビューデータセット

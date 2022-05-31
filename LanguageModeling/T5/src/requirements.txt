@@ -4,4 +4,5 @@ jax[cuda112]==0.2.13
 -f https://storage.googleapis.com/jax-releases/jax_releases.html
 jaxlib==0.1.65+cuda112
 flax==0.3.5
+chex==0.1.2
 optax==0.0.9
